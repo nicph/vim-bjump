@@ -7,6 +7,6 @@ nnoremap <silent> <script> <Plug>(bjump-previous-buffer) :call bjump#previous_bu
 nnoremap <silent> <script> <Plug>(bjump-next-buffer) :call bjump#next_buffer()<CR>
 
 if !exists("g:bjump_no_mappings") || ! g:bjump_no_mappings
-  nmap <silent> go <Plug>(bjump-previous-buffer)
-  nmap <silent> gi <Plug>(bjump-next-buffer)
+  nmap <silent> <leader>o <Plug>(bjump-previous-buffer)
+  nmap <silent> <leader>i <Plug>(bjump-next-buffer)
 endif
